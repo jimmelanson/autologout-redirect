@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Demo: Auto LogOut/Redirect</title>
+  <link rel="stylesheet" type="text/css" href="https://www.jimmelanson.ca/css/flexbox.css">
+  <link rel="stylesheet" type="text/css" href="https://www.jimmelanson.ca/cgi-bin/programming/examples/cgi_delivery/deliver_css.cgi?file=admin">
+  <link rel="stylesheet" type="text/css" href="popup.css">
+  <script src="auto_logout.js"></script>
+  <script language="JavaScript">
+
+window.onload = startAutoLogoutTimer();
+
+  </script>
+</head>
+<body>
+<div class="main-page">
+  <header>
+    <div class="header-container">
+      <label class="item-title">
+        JavaScript Auto Logout/Redirect
+      </label>
+      <label class="item-user">
+        from Ninja Kitty
+      </label>
+    </div>
+  </header>
+  <br /><br /><br /><br /><br /><br />
+  <div class="indexpage-container1">
+    <div class="indexpage-container1-stuff">
+      <div style="width:500px;">
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <span class="admin-text-title">Pretend this is a page that you have logged in to. The autologout/redirect is set for 15 seconds ... be patient.</span>
+        <br />
+      </div>
+    </div>
+  </div>
+  <br /><br /><br /><br />
+  <div id="popupLogoutWarning" class="popup-overlay">
+	<div class="popup-popup">
+      <h2>Auto-Logout</h2>
+		<div class="popup-content" style="background:#e3f7fc;border:1px solid #8ed9f6;padding:20px;">
+			<p>You will be logged out in ten seconds. Click "Stay Logged In" to prevent this.</p>
+            <p><input type="button" name="autologoutStayLoggedIn" id="autologoutStayLoggedIn" value="Stay Logged In" class="admin-button" onclick="resetAutoLogoutTimer();" /></p>
+		</div>
+	</div>
+  </div>
+  <div class="footer-container">
+      <label class="footer-normal">&copy; 2017 Ninja Kitty</label>
+  </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
